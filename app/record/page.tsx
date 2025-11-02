@@ -100,7 +100,7 @@ export default function Record() {
           intent: "question",
           tags: [],
           status: "retrieved",
-          results: result.notes.map(note => ({
+          results: result.notes.map((note: any) => ({
             text: note.text,
             intent: note.intent,
             tags: note.tags,
